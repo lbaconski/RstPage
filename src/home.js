@@ -1,5 +1,5 @@
-import rioParana from "./rio-parana.jpg";
-import grillBackgr from "./parrilla-background.jpg";
+import rioParana from "../src/img/rio-parana.jpg";
+import grillBackgr from "../src/img/parrilla-background.jpg";
 
 document.body.style.backgroundImage = `url(${rioParana})`;
 document.body.style.backgroundRepeat = "no-repeat";
