@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #555231;
+    background-color: #554131;
     color: white;
     padding: 15px 0;
     text-align: center;
@@ -23,7 +23,7 @@ nav {
 }
 
 button {
-    background-color: #9c8c51;
+    background-color: #9c7c51;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -36,7 +36,7 @@ button {
 }
 
 button:hover {
-    background-color: #bcac71;
+    background-color: #bc9f71;
 }
 
 #content {
