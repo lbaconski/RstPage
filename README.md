@@ -1,2 +1,3 @@
 # RstPage
-Project: Restaurant Page
+Mini proyecto para practicar renderizado dinámico 
+y uso de Webpack.
