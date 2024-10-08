@@ -1,1 +1,3 @@
-console.log("RUNNING");
+import "./home";
+import "./styles.css";
+
