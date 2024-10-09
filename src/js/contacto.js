@@ -37,12 +37,15 @@ function render(){
         </div>`
 
     
+
+        let contactoElement = document.createElement('div');
+        
+        contactoElement.innerHTML = ''
+        contactoElement.innerHTML += datosContacto +'<br>'
+        contactoElement.innerHTML += formContacto +'<br>'
+        contactoElement.innerHTML += mapContacto +'<br>'
+        contactoElement.innerHTML += socialMediaContacto 
 let content = document.getElementById('content');
-content.innerHTML = ''
-content.innerHTML += datosContacto +'<br>'
-content.innerHTML += formContacto +'<br>'
-content.innerHTML += mapContacto +'<br>'
-content.innerHTML += socialMediaContacto 
-}
+content.appendChild(contactoElement); }
 
 export { render as renderContacto};

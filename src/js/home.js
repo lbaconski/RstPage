@@ -1,9 +1,6 @@
 
 function render(){
-
-
-    const content = document.getElementById('content');
-    content.innerHTML = `
+    const home= `
         <h1>Bienvenidos a El Asador de Rosario</h1>
 
         <p>
@@ -15,6 +12,9 @@ function render(){
             En El Asador, cada comida es un homenaje a la tradición y la innovación.
         </p>
     `;
-    }
+    let homeElement = document.createElement('div');
+    homeElement.innerHTML = home;
+    let content = document.getElementById('content');
+    content.appendChild(homeElement); }
 
 export { render as renderHome};

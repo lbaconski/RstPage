@@ -1,9 +1,9 @@
-import choripan from "./img/menu-choripan.jpg"
-import tira from "./img/menu-asado-tira.jpg"
-import ensalada from "./img/menu-ensalada.jpg"
-import fritas from "./img/menu-papas-fritas.webp"
-import parrillada from "./img/menu-parrillada.jpg"
-import vacio from "./img/menu-sangcuche-vacio.jpg"
+import choripan from "../img/menu-choripan.jpg"
+import tira from "../img/menu-asado-tira.jpg"
+import ensalada from "../img/menu-ensalada.jpg"
+import fritas from "../img/menu-papas-fritas.jpg"
+import parrillada from "../img/menu-parrillada.jpg"
+import vacio from "../img/menu-sangcuche-vacio.jpg"
 
 
 
@@ -53,17 +53,21 @@ function render(){
         </div>
 `   
 
-let content = document.getElementById('content');
-content.innerHTML = ''
-content.innerHTML += tituloMenu +'<br>'
-content.innerHTML += item1Menu +'<br>'
-content.innerHTML += item2Menu +'<br>'
-content.innerHTML += item3Menu +'<br>'
-content.innerHTML += item4Menu +'<br>'
-content.innerHTML += item5Menu +'<br>'
-content.innerHTML += item6Menu +'<br>'
 
-}
+let menuElement = document.createElement('div');
+
+
+menuElement.innerHTML = ''
+menuElement.innerHTML += tituloMenu +'<br>'
+menuElement.innerHTML += item1Menu +'<br>'
+menuElement.innerHTML += item2Menu +'<br>'
+menuElement.innerHTML += item3Menu +'<br>'
+menuElement.innerHTML += item4Menu +'<br>'
+menuElement.innerHTML += item5Menu +'<br>'
+menuElement.innerHTML += item6Menu +'<br>'
+let content = document.getElementById('content');
+
+content.appendChild(menuElement); }
 
 
 export { render as renderMenu};
