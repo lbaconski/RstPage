@@ -1,8 +1,5 @@
 // Import our custom CSS
-import '../scss/styles.scss'
-
-// Import all of Bootstrap's JS
-import * as bootstrap from 'bootstrap'
+import '../css/styles.css'
 
 import { renderNav } from "./navbar";
 import { renderHome } from "./home";
@@ -17,12 +14,12 @@ document.body.style.backgroundRepeat = "no-repeat";
 document.body.style.backgroundPosition = "center";
 document.body.style.backgroundSize = "cover";
 let content = document.getElementById("content")
-content.classList.add("cover-container", "d-flex", "w-100", "h-100", "p-3", "mx-auto", "flex-column");
+content.classList.add();
 function home() {
     content.innerHTML = "";
     renderNav();
     renderHome();
-    renderFooter();
+    renderFooter(); 
   }
   function menu() {
     content.innerHTML = "";
