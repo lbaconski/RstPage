@@ -18,3 +18,9 @@ content.innerHTML = `
         En El Asador, cada comida es un homenaje a la tradición y la innovación.
     </p>
 `;
+
+
+
+function render(){}
+
+export { render as renderHome};
