@@ -1,0 +1,58 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+
+#content {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/parrilla-background.jpg");
+    background-repeat: "no-repeat";
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; 
+    padding: 15px 30px; 
+}
+
+.logo {
+    color: white; 
+    font-size: 24px; 
+}
+
+.nav-links {
+    list-style: none; 
+    display: flex; 
+    gap: 20px; 
+}
+
+.nav-links li {
+    position: relative; 
+}
+
+.nav-links a {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.nav-links a:hover {
+    background-color: #555; 
+    color: #FFD700; 
+}
+
+.nav-links a:active {
+    color: #FFD700; 
+}

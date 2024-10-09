@@ -9,7 +9,6 @@ function render(){
     let footerElement = document.createElement('footer');
    
     footerElement.innerHTML = footer;
-    footerElement.classList.add( )
     let content = document.getElementById('content');
 content.appendChild(footerElement); }
 

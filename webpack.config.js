@@ -3,10 +3,12 @@
 
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { error } = require('console')
 
 module.exports = {
   mode: 'production',
   entry: './src/js/main.js',
+  stats: {warnings:false},
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist')
@@ -14,7 +16,9 @@ module.exports = {
   devServer: {
     static: path.resolve(__dirname, 'dist'),
     port: 8080,
-    hot: true
+    hot: true,
+    stats: {warnings:false}
+    
   },
   plugins: [
     new HtmlWebpackPlugin({ template: './src/index.html' })
@@ -22,7 +26,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(scss)$/,
+        test: /\.(css)$/,
         use: [
           {
             // Adds CSS to the DOM by injecting a `<style>` tag

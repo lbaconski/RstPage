@@ -7,14 +7,9 @@ import { renderFooter } from "./footer";
 import { renderMenu } from "./menu";
 import { renderContacto} from "./contacto";
 
-import grillBackgr from "../img/parrilla-background.jpg";
 
-document.body.style.backgroundImage = `url(${grillBackgr})`;
-document.body.style.backgroundRepeat = "no-repeat";
-document.body.style.backgroundPosition = "center";
-document.body.style.backgroundSize = "cover";
 let content = document.getElementById("content")
-content.classList.add();
+
 function home() {
     content.innerHTML = "";
     renderNav();
