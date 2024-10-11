@@ -32,13 +32,12 @@ function render() {
 
 
     let menuWrapped = `
-      <div class="menu">
           <h2 class="menu-group-heading">Sugerencias</h2>
           <div class="menu-group">${menuContent}</div>
-      </div>
     `;
 
     let menuElement = document.createElement('div');
+    menuElement.classList.add('menu')
     menuElement.innerHTML = menuWrapped;
     let content = document.getElementById('content');
     content.appendChild(menuElement);

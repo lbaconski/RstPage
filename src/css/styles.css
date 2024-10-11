@@ -11,11 +11,12 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    max-height: 100vh;
     background: url("../img/parrilla-background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: rgb(248, 239, 235);
+
+    color: rgb(255, 255, 255);
     font-weight: 800;
+    align-items: center;
     
 
 }
@@ -29,10 +30,6 @@
     width: 100%;
 }
 
-.logo {
-    color: white; 
-    font-size: 24px; 
-}
 
 .nav-links {
     list-style: none; 
@@ -89,7 +86,7 @@
 
 .contact-title {
     font-size: 28px;
-    color: rgb(248, 239, 235);
+    color: #fafafa;
     margin-bottom: 20px;
     font-weight: 800;
 }
@@ -103,9 +100,10 @@
 }
 
 .contact-item {
-    font-size: 18px;
-    font-weight: 600;
-    color: rgb(248, 239, 235);
+    font-size: 1em;
+    font-weight: 300;
+    color: #fafafa;
+    text-align: left;
 }
 
 .contact-form {
@@ -113,12 +111,12 @@
     flex-direction: column;
     gap: 15px;
     margin-bottom: 30px;
-    max-width: 500px;
+    max-width: 80%;
 }
 
 .input-field,
 .textarea-field {
-    width: 50%;
+    width: 100%;
     padding: 10px;
     font-size: 16px;
     border: solid 1px #FFD700;
@@ -146,14 +144,9 @@
     color: #FFD700;
 }
 
-.contact-map {
-    margin-bottom: 30px;
-    max-width: 350px;
-}
 
 .iframe-map {
-    width: 50%;
-    height: 300px;
+
     border: 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -165,7 +158,7 @@
 
 .social-title {
     font-size: 24px;
-    color: rgb(248, 239, 235);
+    color: #fafafa;
     margin-bottom: 15px;
 }
 
@@ -178,7 +171,7 @@
 }
 
 .social-link:hover {
-    color: rgb(248, 239, 235);
+    color: #fafafa;
 }
 
 .content-wrap{
@@ -193,6 +186,18 @@
     height: 50%;
 
 }
+.menu{
+
+    --main-color: #f4f4f4;
+    --bg-color: #33333392;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    background: var(--bg-color);
+    border-radius: 20px;
+    display: block;
+    width: 80%;
+
+}
 .contact-wrap{
   --main-color: #f4f4f4;
   --bg-color: #33333392;
@@ -200,9 +205,10 @@
   padding: 20px;
   background: var(--bg-color);
   border-radius: 20px;
-  display: flex;
   width: 80%;
   height: 50%;
+  display: grid;
+  grid-template-columns: 50% 100%;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Bree+Serif|Poppins|Source+Sans+Pro|Montserrat:400,900&display=swap");
@@ -259,6 +265,7 @@
 
 .menu-item-desc {
   line-height: 1.6;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 992px) {

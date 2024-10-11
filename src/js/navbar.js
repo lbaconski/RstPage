@@ -2,7 +2,6 @@ function renderNav(){
 const nav = `
     <nav class="navbar">
     
-        <div class="logo">El Asador</div>
        
                 <ul class="nav-links">
                     <li >
