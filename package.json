@@ -2,7 +2,7 @@
   "name": "rstpage",
   "version": "1.0.0",
   "description": "Mini proyecto para practicar renderizado dinámico  y uso de Webpack.",
-  "main": "./src/js/main.js",
+  "main": "./js/main.js",
   "scripts": {
     "start": "webpack serve",
     "build": "webpack build --mode=production",

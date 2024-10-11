@@ -7,8 +7,17 @@ function render(){
         </div>
            <div class="footer-bottom">
        <p> &copy; 2024 El Asador | All Rights Reserved</p>
+
     </div>
-        </div>`
+
+    <div class="social-media">
+
+    <a href="https://facebook.com/elasadorderosario" target="_blank" class="social-link">Facebook</a>
+    <a href="https://instagram.com/elasadorderosario" target="_blank" class="social-link">Instagram</a>
+    <a href="https://twitter.com/elasadorderosario" target="_blank" class="social-link">Twitter</a>
+    </div>
+
+`
     
     let footerElement = document.createElement('footer');
    
