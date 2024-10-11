@@ -1,6 +1,5 @@
     function render() {
         const datosContacto = `
-            <h2 class="contact-title">Contacto</h2>
             <div class="contact-details">
                 <div class="contact-item">
                     <strong>Dirección:</strong> Av. Wheelwright 1487, S2000 Rosario, Santa Fe, Argentina
@@ -36,12 +35,12 @@
 
    
         let contactoElement = document.createElement('div');
-        contactoElement.classList.add('content-wrap')
+        contactoElement.classList.add('contact-wrap')
         
         contactoElement.innerHTML = '';
    
-        contactoElement.innerHTML += formContacto + '<br>';
-        contactoElement.innerHTML += mapContacto+ '<br>';
+        contactoElement.innerHTML += formContacto
+        contactoElement.innerHTML += mapContacto
         contactoElement.innerHTML += datosContacto 
 
         let content = document.getElementById('content');
